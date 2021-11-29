@@ -25,7 +25,7 @@ const HeaderNav = ()=>{
             <img src={logo} alt="logo" className={classes['theme']}/>
             <div className={classes['nav_select']}>
                 {DUMMYSELECTION.map((obj)=>{
-                    return <HeaderSelection title={obj.title}/>
+                    return <HeaderSelection title={obj.title} key={obj.title}/>
                 })}
             </div>
         </div>

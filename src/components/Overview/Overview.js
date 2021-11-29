@@ -21,7 +21,7 @@ const Overview = ()=> {
         <div className={classes['title']}>OVERVIEW</div>
         <div className={classes['overview_box']}>
             {DUMMY_Overview.map((obj)=>{
-                return <OverviewChoice icon={obj.icon} des={obj.des}/>
+                return <OverviewChoice icon={obj.icon} des={obj.des} key={obj.des}/>
             })}
             
         </div>

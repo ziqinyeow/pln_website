@@ -5,7 +5,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import logo from './static/pln_logo&title.png'
 import wave from './static/about-us-wave.png'
 import Overview from "./components/Overview/Overview";
-
+import FAQ from "./components/FAQ/FAQ";
 
 function App() {
   return (
@@ -48,6 +48,7 @@ function App() {
           <img src={wave} alt="wave" style={{width:'100%',position:'absolute',bottom:0}}/>
         </div>
         <Overview/>
+        <FAQ/>
         {/* todo */}
       </div>
     </>
