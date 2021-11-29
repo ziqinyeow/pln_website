@@ -6,6 +6,10 @@ import logo from './static/pln_logo&title.png'
 import wave from './static/about-us-wave.png'
 import Overview from "./components/Overview/Overview";
 import FAQ from "./components/FAQ/FAQ";
+import Sponsor from "./components/Sponsor/Sponsor";
+import instagram from "./static/UI/instagram.svg"
+import facebook from "./static/UI/facebook.svg"
+import google from "./static/UI/google.svg"
 
 function App() {
   return (
@@ -49,7 +53,17 @@ function App() {
         </div>
         <Overview/>
         <FAQ/>
-        {/* todo */}
+        <Sponsor/>
+        <div className={classes['footer']}>
+          <div className={classes['control-footer']}>
+            <div className={classes['logo-list']}>
+              <img src={instagram} alt="" className={classes['org-info']}></img>
+              <img src={facebook} alt="" className={classes['org-info']}></img>
+              <img src={google} alt="" className={classes['org-info']}></img>
+            </div>
+            <div className={classes['copywrite']}>Copyright © 2021 Programming League National. All rights reserved.</div>
+          </div>
+        </div>
       </div>
     </>
   );
