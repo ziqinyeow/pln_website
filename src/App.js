@@ -4,6 +4,7 @@ import homepage from './static/homepage.png'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import logo from './static/pln_logo&title.png'
 import wave from './static/about-us-wave.png'
+import Overview from "./components/Overview/Overview";
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
           </div>
           <img src={wave} alt="wave" style={{width:'100%',position:'absolute',bottom:0}}/>
         </div>
+        <Overview/>
         {/* todo */}
       </div>
     </>
